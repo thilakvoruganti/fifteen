@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+}
+#header {
+    text-align: center;
+}
+#description2 {
+    text-indent: 0; /* Removes indentation from paragraphs */
+    margin-left: 0; /* Ensures no extra space on the left side */
+}
+#puzzle-container {
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    position: relative;
+    border: 1px solid #000;
+}
+
+.tile {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 100px; /* This ensures the text is centered vertically */
+    border: 1px solid #000;
+    cursor: pointer;
+    position: absolute;
+    background-size: 400px 400px;
+    font-size: 32pt; /* Set the font size for the numbers */
+    color: black;
+}
+#shuffle-button {
+    display: block;
+    margin: 20px auto; /* Centers the button horizontally */
+    padding: 10px 20px; /* Optional: for better sizing of the button */
+    font-size: 16px; /* Optional: for better readability */
+    cursor: pointer; /* Optional: changes the cursor on hover */
+}
+.movablepiece {
+    border-color: black;
+    color: #006600; /* Green text */
+    text-decoration: underline;
+}
+
+#tile16 {
+    background: none; 
+    pointer-events: none; /* This ensures that clicks pass through to tiles below */
+}
+
+.winning-message {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    text-align: center;
+    font-size: 24px;
+    color: green;
+}
